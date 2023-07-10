@@ -1,0 +1,65 @@
+[0m10:39:50.956689 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec8e7fda20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec90224490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec902246d0>]}
+
+
+============================== 10:39:50.960260 | 0008a0de-e8ba-49e9-bb76-8fc5fa2bd607 ==============================
+[0m10:39:50.960260 [info ] [MainThread]: Running with dbt=1.5.2
+[0m10:39:50.960807 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/Users/pratiksha.kulkurni/.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m10:39:50.961269 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': PosixPath('/Users/pratiksha.kulkurni/.dbt')}
+[0m10:39:50.961614 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m10:39:50.962392 [error] [MainThread]: Encountered an error:
+1
+[0m10:39:50.963386 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/pratiksha.kulkurni/anaconda3/lib/python3.10/site-packages/dbt/cli/requires.py", line 86, in wrapper
+    result, success = func(*args, **kwargs)
+  File "/Users/pratiksha.kulkurni/anaconda3/lib/python3.10/site-packages/dbt/cli/requires.py", line 71, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/pratiksha.kulkurni/anaconda3/lib/python3.10/site-packages/dbt/cli/main.py", line 457, in init
+    results = task.run()
+  File "/Users/pratiksha.kulkurni/anaconda3/lib/python3.10/site-packages/dbt/task/init.py", line 287, in run
+    sys.exit(1)
+SystemExit: 1
+
+[0m10:39:50.964464 [debug] [MainThread]: Command `dbt init` failed at 10:39:50.964167 after 1.15 seconds
+[0m10:39:50.964845 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec8e7fda20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec90224580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fec90224220>]}
+[0m10:39:50.965164 [debug] [MainThread]: Flushing usage events
+[0m10:43:17.460544 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa6ec589a20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa6ede30730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa6ede308e0>]}
+
+
+============================== 10:43:17.464285 | 03610613-098f-4a1f-8cc6-f4fd480eb36a ==============================
+[0m10:43:17.464285 [info ] [MainThread]: Running with dbt=1.5.2
+[0m10:43:17.464832 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'profiles_dir': '/Users/pratiksha.kulkurni/.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m10:43:17.465854 [debug] [MainThread]: Starter project path: /Users/pratiksha.kulkurni/anaconda3/lib/python3.10/site-packages/dbt/include/starter_project
+[0m10:43:34.476854 [error] [MainThread]: Encountered an error:
+cannot import name 'RuntimeException' from 'dbt.exceptions' (/Users/pratiksha.kulkurni/anaconda3/lib/python3.10/site-packages/dbt/exceptions.py)
+[0m10:43:34.479492 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/pratiksha.kulkurni/anaconda3/lib/python3.10/site-packages/dbt/cli/requires.py", line 86, in wrapper
+    result, success = func(*args, **kwargs)
+  File "/Users/pratiksha.kulkurni/anaconda3/lib/python3.10/site-packages/dbt/cli/requires.py", line 71, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/pratiksha.kulkurni/anaconda3/lib/python3.10/site-packages/dbt/cli/main.py", line 457, in init
+    results = task.run()
+  File "/Users/pratiksha.kulkurni/anaconda3/lib/python3.10/site-packages/dbt/task/init.py", line 307, in run
+    self.create_profile_from_target(adapter, profile_name=project_name)
+  File "/Users/pratiksha.kulkurni/anaconda3/lib/python3.10/site-packages/dbt/task/init.py", line 173, in create_profile_from_target
+    load_plugin(adapter)
+  File "/Users/pratiksha.kulkurni/anaconda3/lib/python3.10/site-packages/dbt/adapters/factory.py", line 209, in load_plugin
+    return FACTORY.load_plugin(name)
+  File "/Users/pratiksha.kulkurni/anaconda3/lib/python3.10/site-packages/dbt/adapters/factory.py", line 58, in load_plugin
+    mod: Any = import_module("." + name, "dbt.adapters")
+  File "/Users/pratiksha.kulkurni/anaconda3/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/pratiksha.kulkurni/anaconda3/lib/python3.10/site-packages/dbt/adapters/athena/__init__.py", line 1, in <module>
+    from dbt.adapters.athena.connections import AthenaConnectionManager
+  File "/Users/pratiksha.kulkurni/anaconda3/lib/python3.10/site-packages/dbt/adapters/athena/connections.py", line 22, in <module>
+    from dbt.exceptions import RuntimeException, FailedToConnectException
+ImportError: cannot import name 'RuntimeException' from 'dbt.exceptions' (/Users/pratiksha.kulkurni/anaconda3/lib/python3.10/site-packages/dbt/exceptions.py)
+
+[0m10:43:34.480459 [debug] [MainThread]: Command `dbt init` failed at 10:43:34.480325 after 17.03 seconds
+[0m10:43:34.480798 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa6ec589a20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa6ee93f700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa6ede31ba0>]}
+[0m10:43:34.481172 [debug] [MainThread]: Flushing usage events
